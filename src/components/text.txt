@@ -1,0 +1,54 @@
+const styleElement = document.createElement('style');
+styleElement.textContent = `
+.inline-block.mr-2 {
+  animation: text-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-animation {
+  0% {
+    color: #333;
+    font-size: 1em;
+  }
+  100% {
+    color: #007bff;
+    font-size: 1.2em;
+  }
+}`;
+document.head.appendChild(styleElement);
+await setElementStyles($0, {
+  animation: 'text-animation 2s ease-in-out infinite alternate'
+});
+const data = {};
+
+// .inline-block.mr-2 {
+//   animation: text-animation 2s ease-in-out infinite alternate;
+// }
+
+// @keyframes text-animation {
+//   0% {
+//     color: #333;
+//     font-size: 1em;
+//   }
+//   100% {
+//     color: #007bff;
+//     font-size: 1.2em;
+//   }
+// }
+// await setElementStyles($0, {
+//   animation: 'text-animation 2s ease-in-out infinite alternate'
+// });
+// const styleSheet = document.styleSheets[0];
+// const animationRule = `@keyframes text-animation {
+//   0% {
+//     color: #333;
+//     font-size: 1em;
+//   }
+//   100% {
+//     color: #007bff;
+//     font-size: 1.2em;
+//   }
+// }`;
+// styleSheet.insertRule(animationRule, styleSheet.cssRules.length);
+// const data = {};
+const styleElement = document.createElement('style');
+styleElement.textContent = `
